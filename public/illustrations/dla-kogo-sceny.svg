@@ -1,0 +1,29 @@
+<svg viewBox="0 0 720 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="dk-glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <!-- przerwa -->
+  <circle cx="120" cy="130" r="86" fill="#171c27" stroke="#252c3a" stroke-width="1.5" />
+  <circle cx="120" cy="130" r="50" fill="#e5a13a" opacity="0.12" filter="url(#dk-glow)" />
+  <path d="M92 118 h44 v28 a22 22 0 0 1 -22 22 h0 a22 22 0 0 1 -22 -22 z" stroke="#ffc169" stroke-width="3" stroke-linejoin="round" />
+  <path d="M136 126 h10 a10 10 0 0 1 0 20 h-8" stroke="#ffc169" stroke-width="3" />
+  <path d="M100 96 q4 -10 0 -18" stroke="#ffc169" stroke-opacity="0.6" stroke-width="2.4" stroke-linecap="round" />
+  <path d="M114 96 q4 -10 0 -18" stroke="#ffc169" stroke-opacity="0.6" stroke-width="2.4" stroke-linecap="round" />
+
+  <!-- w drodze -->
+  <circle cx="360" cy="130" r="86" fill="#171c27" stroke="#252c3a" stroke-width="1.5" />
+  <circle cx="360" cy="130" r="50" fill="#46c4b3" opacity="0.12" filter="url(#dk-glow)" />
+  <rect x="322" y="100" width="76" height="56" rx="14" stroke="#7bdfd0" stroke-width="3" />
+  <path d="M328 140 q22 -22 40 -8 q10 8 24 0" stroke="#7bdfd0" stroke-width="2.4" stroke-linecap="round" />
+  <circle cx="345" cy="118" r="5" fill="#7bdfd0" />
+
+  <!-- wieczorem -->
+  <circle cx="600" cy="130" r="86" fill="#171c27" stroke="#252c3a" stroke-width="1.5" />
+  <circle cx="600" cy="130" r="50" fill="#e5a13a" opacity="0.14" filter="url(#dk-glow)" />
+  <path d="M614 100 a34 34 0 1 0 0 60 a26 26 0 0 1 0 -60 z" fill="#ffe9bf" opacity="0.9" />
+  <circle cx="570" cy="108" r="2.4" fill="#ffe9bf" />
+  <circle cx="580" cy="150" r="1.8" fill="#ffe9bf" />
+</svg>

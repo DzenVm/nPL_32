@@ -1,0 +1,45 @@
+<svg viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="mp-glow-sm" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+    <filter id="mp-glow-lg" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+  </defs>
+
+  <path
+    d="M80 190 C 150 140, 190 110, 260 100 S 400 220, 450 215 S 580 100, 630 90 S 760 160, 820 175"
+    stroke="#eef1f6"
+    stroke-opacity="0.16"
+    stroke-width="2"
+    stroke-dasharray="1 10"
+    stroke-linecap="round"
+  />
+
+  <!-- Swit -->
+  <circle cx="80" cy="190" r="20" fill="#46c4b3" opacity="0.18" filter="url(#mp-glow-sm)" />
+  <circle cx="80" cy="190" r="9" fill="#7bdfd0" />
+  <text x="80" y="240" text-anchor="middle" font-family="Fraunces, serif" font-size="19" fill="#cfe9e4">Świt</text>
+
+  <!-- Poludnie -->
+  <circle cx="260" cy="100" r="24" fill="#e5a13a" opacity="0.2" filter="url(#mp-glow-sm)" />
+  <circle cx="260" cy="100" r="11" fill="#ffc169" />
+  <text x="260" y="150" text-anchor="middle" font-family="Fraunces, serif" font-size="19" fill="#f2d9ab">Południe</text>
+
+  <!-- Zmierzch -->
+  <circle cx="450" cy="215" r="27" fill="#e5a13a" opacity="0.24" filter="url(#mp-glow-sm)" />
+  <circle cx="450" cy="215" r="12" fill="#f0a24a" />
+  <text x="450" y="266" text-anchor="middle" font-family="Fraunces, serif" font-size="19" fill="#f0cf9f">Zmierzch</text>
+
+  <!-- Zacmienie -->
+  <circle cx="630" cy="90" r="30" fill="#ef5b4f" opacity="0.22" filter="url(#mp-glow-sm)" />
+  <circle cx="630" cy="90" r="13" fill="#e97a63" />
+  <text x="630" y="141" text-anchor="middle" font-family="Fraunces, serif" font-size="19" fill="#f0c1b4">Zaćmienie</text>
+
+  <!-- Rdzen -->
+  <circle cx="820" cy="175" r="46" fill="#fff3d9" opacity="0.28" filter="url(#mp-glow-lg)" />
+  <circle cx="820" cy="175" r="18" fill="none" stroke="#ffe9bf" stroke-width="2" stroke-opacity="0.7" />
+  <circle cx="820" cy="175" r="10" fill="#fffaf0" />
+  <text x="820" y="236" text-anchor="middle" font-family="Fraunces, serif" font-size="21" fill="#fff3d9">Rdzeń</text>
+</svg>

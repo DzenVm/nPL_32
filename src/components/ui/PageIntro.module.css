@@ -1,0 +1,25 @@
+.section {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-6);
+}
+
+.eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-teal-strong);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-size: var(--text-3xl);
+  max-width: 26ch;
+}
+
+.lede {
+  margin-top: var(--space-4);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: 42rem;
+}

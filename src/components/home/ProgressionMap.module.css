@@ -1,0 +1,48 @@
+.section {
+  padding-block: var(--space-9);
+  border-top: 1px solid var(--color-border);
+}
+
+.art {
+  width: 100%;
+  height: auto;
+  margin-top: var(--space-6);
+}
+
+.list {
+  margin-top: var(--space-7);
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 50rem) {
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.stage {
+  padding: var(--space-4);
+  border-top: 2px solid var(--stage-color, var(--color-border-strong));
+}
+
+.stageName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+  color: var(--stage-color, var(--color-text));
+}
+
+.stageText {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.note {
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+  max-width: 42rem;
+}

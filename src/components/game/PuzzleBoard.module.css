@@ -1,0 +1,223 @@
+.wrapper {
+  display: grid;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .wrapper {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+  }
+}
+
+.levelTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.levelTab {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-panel);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.levelTab:hover {
+  border-color: var(--color-teal-strong);
+}
+
+.levelTabActive {
+  border-color: var(--color-amber);
+  background: rgba(229, 161, 58, 0.14);
+  color: var(--color-amber-strong);
+}
+
+.levelTabSolved {
+  color: var(--color-teal-strong);
+}
+
+.stage {
+  background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.035), transparent 65%), var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.levelTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-1);
+}
+
+.levelIntro {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-5);
+}
+
+.boardFrame {
+  width: 100%;
+  max-width: 24rem;
+  margin-inline: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.ringGroup {
+  cursor: pointer;
+  transition: transform 0.45s var(--ease-out-soft);
+}
+
+.ringGroup path {
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.receptor {
+  transition: fill 0.35s var(--ease-out-soft);
+}
+
+.receptorSolved {
+  animation: pulse 1.6s var(--ease-out-soft) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px currentColor);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.ringControls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.ringControlRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.ringButtons {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.ringButton {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-raised);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringButton:hover:not(:disabled) {
+  border-color: var(--color-amber);
+  color: var(--color-amber-strong);
+}
+
+.ringButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.stats strong {
+  color: var(--color-text);
+}
+
+.toggleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.toggleRow input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--color-teal);
+}
+
+.actionsRow {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  height: 2.6rem;
+  padding-inline: 1.15rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-raised);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.actionButton:hover {
+  border-color: var(--color-amber);
+  color: var(--color-amber-strong);
+}
+
+.winBanner {
+  border: 1px solid rgba(70, 196, 179, 0.4);
+  background: rgba(70, 196, 179, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-teal-strong);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+
+.legendSwatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.legendDot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  display: inline-block;
+}

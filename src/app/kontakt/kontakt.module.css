@@ -1,0 +1,25 @@
+.card {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-panel);
+  margin-bottom: var(--space-7);
+}
+
+.email {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-amber-strong);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.hint {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+}

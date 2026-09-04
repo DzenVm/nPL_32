@@ -1,0 +1,38 @@
+<svg viewBox="0 0 480 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="mech-blur" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <!-- emiter -->
+  <circle cx="240" cy="56" r="16" fill="#eef1f6" opacity="0.14" filter="url(#mech-blur)" />
+  <circle cx="240" cy="56" r="7" fill="#eef1f6" opacity="0.85" />
+  <path d="M228 78 L252 78 L240 96 Z" fill="#eef1f6" opacity="0.5" />
+
+  <!-- wiazka -->
+  <line x1="240" y1="96" x2="240" y2="560" stroke="#eef1f6" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="3 9" />
+
+  <!-- pasmo 1: R -->
+  <rect x="70" y="150" width="340" height="64" rx="18" fill="#ef5b4f" fill-opacity="0.16" stroke="#ef5b4f" stroke-opacity="0.55" stroke-width="1.5" />
+  <text x="96" y="187" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#f2b6ae">pierścień zewnętrzny</text>
+
+  <!-- pasmo 2: clear -->
+  <rect x="70" y="288" width="340" height="64" rx="18" fill="#eef1f6" fill-opacity="0.04" stroke="#eef1f6" stroke-opacity="0.18" stroke-width="1.5" />
+  <text x="96" y="325" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#9aa2b3">pierścień środkowy — przezroczysty</text>
+
+  <!-- pasmo 3: G -->
+  <rect x="70" y="426" width="340" height="64" rx="18" fill="#5bcb6e" fill-opacity="0.16" stroke="#5bcb6e" stroke-opacity="0.55" stroke-width="1.5" />
+  <text x="96" y="463" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#a9e0b2">pierścień wewnętrzny</text>
+
+  <!-- kropki narastajacego koloru na wiazce -->
+  <circle cx="240" cy="130" r="5" fill="#6a7182" />
+  <circle cx="240" cy="250" r="6" fill="#ef5b4f" />
+  <circle cx="240" cy="390" r="6" fill="#ef5b4f" />
+  <circle cx="240" cy="510" r="7" fill="#e8c24a" />
+
+  <!-- odbiornik -->
+  <circle cx="240" cy="590" r="30" fill="#e8c24a" opacity="0.22" filter="url(#mech-blur)" />
+  <circle cx="240" cy="590" r="17" fill="none" stroke="#e8c24a" stroke-opacity="0.6" stroke-width="2" />
+  <circle cx="240" cy="590" r="10" fill="#e8c24a" />
+</svg>

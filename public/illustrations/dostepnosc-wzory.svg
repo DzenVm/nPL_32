@@ -1,0 +1,41 @@
+<svg viewBox="0 0 640 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="ax-wzor-r" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="#ef5b4f" />
+      <line x1="0" y1="0" x2="0" y2="7" stroke="white" stroke-opacity="0.6" stroke-width="2" />
+    </pattern>
+    <pattern id="ax-wzor-g" width="9" height="9" patternUnits="userSpaceOnUse">
+      <rect width="9" height="9" fill="#5bcb6e" />
+      <circle cx="2.2" cy="2.2" r="1.5" fill="white" fill-opacity="0.65" />
+    </pattern>
+    <pattern id="ax-wzor-b" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#5390f0" />
+      <line x1="0" y1="0" x2="8" y2="0" stroke="white" stroke-opacity="0.55" stroke-width="1.6" />
+      <line x1="0" y1="0" x2="0" y2="8" stroke="white" stroke-opacity="0.55" stroke-width="1.6" />
+    </pattern>
+    <marker id="strzalka" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6f7789" />
+    </marker>
+  </defs>
+
+  <!-- grupa R -->
+  <rect x="24" y="34" width="64" height="64" rx="16" fill="#ef5b4f" />
+  <path d="M100 66 h28" stroke="#6f7789" stroke-width="2" marker-end="url(#strzalka)" />
+  <rect x="140" y="34" width="64" height="64" rx="16" fill="url(#ax-wzor-r)" />
+  <text x="114" y="128" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="#a9b1c2">sam kolor → kolor i wzór</text>
+
+  <!-- grupa G -->
+  <rect x="248" y="34" width="64" height="64" rx="16" fill="#5bcb6e" />
+  <path d="M324 66 h28" stroke="#6f7789" stroke-width="2" marker-end="url(#strzalka)" />
+  <rect x="364" y="34" width="64" height="64" rx="16" fill="url(#ax-wzor-g)" />
+  <text x="342" y="128" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="#a9b1c2">sam kolor → kolor i wzór</text>
+
+  <!-- grupa B -->
+  <rect x="472" y="34" width="64" height="64" rx="16" fill="#5390f0" />
+  <path d="M548 66 h28" stroke="#6f7789" stroke-width="2" marker-end="url(#strzalka)" />
+  <rect x="588" y="34" width="52" height="64" rx="16" fill="url(#ax-wzor-b)" />
+
+  <text x="20" y="170" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="#eef1f6">
+    Każda barwa ma swój wzór — działa nawet, gdy kolory zlewają się w jedno.
+  </text>
+</svg>

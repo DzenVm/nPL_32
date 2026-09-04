@@ -1,0 +1,84 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-10);
+  padding-block: var(--space-8) var(--space-6);
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.015));
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-7);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 50rem) {
+  .grid {
+    grid-template-columns: 1.3fr 0.8fr 0.8fr 0.9fr;
+  }
+}
+
+.about {
+  max-width: 26rem;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+.about p + p {
+  margin-top: var(--space-3);
+}
+
+.heading {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-3);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.list a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: var(--color-text);
+}
+
+.linkLikeButton {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  text-align: left;
+}
+
+.linkLikeButton:hover {
+  color: var(--color-text);
+}
+
+.bottom {
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
