@@ -57,17 +57,19 @@ wykrywa ją automatycznie.
    - `NEXT_PUBLIC_GA_MEASUREMENT_ID`
    - `NEXT_PUBLIC_ADS_ID`
 4. Deploy.
+5. W Project Settings → Domains dodaj `bemookad.pro` (i ewentualnie
+   `www.bemookad.pro` z przekierowaniem) i podepnij rekordy DNS zgodnie z
+   instrukcją, którą pokaże Vercel po dodaniu domeny.
 
-### Po podpięciu docelowej domeny
+### Domena
 
 Cała konfiguracja domeny jest scentralizowana w jednym miejscu:
-`src/lib/site.ts` → stała `SITE_DOMAIN` (obecnie placeholder
-`twoja-domena.pl`). Podmiana tej jednej wartości aktualizuje automatycznie:
-`metadataBase`, canoniczne URL-e, `sitemap.xml`, `robots.txt`, dane
-JSON-LD oraz adres kontaktowy w stopce i na stronie kontaktowej
-(`kontakt@<domena>`).
+`src/lib/site.ts` → stała `SITE_DOMAIN` (obecnie `bemookad.pro`). Zmiana tej
+jednej wartości aktualizuje automatycznie: `metadataBase`, canoniczne
+URL-e, `sitemap.xml`, `robots.txt`, dane JSON-LD oraz adres kontaktowy w
+stopce i na stronie kontaktowej (`kontakt@bemookad.pro`).
 
-Przed uruchomieniem produkcyjnym pod prawdziwą domeną warto też uzupełnić w
+Przed uruchomieniem produkcyjnym warto też uzupełnić w
 `polityka-prywatnosci` pełne dane administratora (nazwę działalności / NIP /
 adres), jeśli działalność zostanie do tego czasu zarejestrowana — obecna
 treść identyfikuje administratora funkcjonalnie (przez adres kontaktowy),

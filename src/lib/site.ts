@@ -1,8 +1,4 @@
-/**
- * Domena docelowa nie jest jeszcze znana — "twoja-domena.pl" to jawny placeholder
- * do podmiany w jednym miejscu, gdy tylko domena zostanie zarejestrowana i podpięta.
- */
-export const SITE_DOMAIN = "twoja-domena.pl";
+export const SITE_DOMAIN = "bemookad.pro";
 export const SITE_URL = `https://${SITE_DOMAIN}`;
 export const CONTACT_EMAIL = `kontakt@${SITE_DOMAIN}`;
 
