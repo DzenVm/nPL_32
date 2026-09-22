@@ -58,7 +58,7 @@ assert.doesNotMatch(
 );
 
 const routingFiles = [
-  path.join(root, "proxy.ts"),
+  path.join(root, "src", "proxy.ts"),
   ...(await collectFiles(path.join(root, "lib", "tds"))),
 ];
 const routingCorpus = (
